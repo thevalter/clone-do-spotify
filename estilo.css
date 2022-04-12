@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(11, 69, 156);
+}
+.navbar{
+    height: 80px;
+    background: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.logo{
+    display: inline-block;
+    /* border: 1px solid red; */
+    align-items: left;
+    
+}
+
+.imagem{ 
+    height: 38px;
+    width: 130px;   
+    margin: 0%;
+}
+
+.botao{
+    display: inline-block;
+    /* border: 1px solid blue; */
+    margin-left: 35%;
+
+}
+
+.botao a{
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+}
+
+#espaço{
+    display: inline-block;
+    height: 18px;
+    border-left: 1px solid white;
+}
+
+.botao a:hover{
+    color: green;
+}
+
+h2{
+    color: #1ed760;
+    font-size: 150px;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 14%;
+    margin-bottom: 0%;
+}
+
+p {
+    text-align: center;
+    color:#1ed760;
+    font-size: 20px;
+    margin-bottom: 4%;
+}
+
+.botao-baixar{
+    color: rgb(11, 69, 156);
+    padding: 14px;
+    background: #1ed760;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+   
+}
+
+.rodape{
+    margin-top: 15%;
+    background-color: black;
+    height: 520px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.img-rodape{
+    height: 38px;
+    width: 130px;
+    margin-top: 50%; 
+}
+
+.logo-rodape{
+    /* border: 1px solid red; */
+    height: 310px;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.empresa{
+    /* border: 1px solid blue; */
+    height: 310px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.empresa1{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+
+.comunidade{
+    height: 310px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.comunidade1{
+    text-decoration: none;
+    color: white;
+    padding: 12px; 
+}
+
+.links{
+    /* border: 1px solid purple; */
+    height: 310px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.links1{
+    text-decoration: none;
+    color: white;
+    padding: 12px;  
+}
+
+.icones{ 
+    /* border: 1px solid green; */
+    height: 250px;
+    width: 200px;
+    margin-left: 10%;
+    justify-content: right;
+    align-items: right;
+}
+
+.creditos{
+    display: inline-block;
+    height: 20px;
+    width: 50%;
+    margin-top: 8%;
+    margin-right: 30%;
+    text-align: right;
+}
+
+.creditos11{
+    color: gray;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.creditos2{
+    height: 100px;
+    width: 20%;
+    margin-top: 6%;
+    /* border: 1px solid red; */
+}
+
+.creditos22{
+    color: gray;
+    font-size: 12px; 
+    text-align: right; 
+    display: block;
+    text-decoration: none;
+    margin-right: 50%;
+}
+
+.empresa1:hover{
+    color: green;
+}
+
+.comunidade1:hover{
+    color: green;
+}
+
+.links1:hover{
+    color: green;
+}
+
+.creditos11:hover{
+    color: green;
+}
+
+a.creditos22:hover{
+    color: green;
+}
