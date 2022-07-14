@@ -1,0 +1,96 @@
+@media screen and (max-width: 1050px) {
+    .sidebar a{
+        font-size: 1rem;
+        padding-left: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sidebar a{
+        font-size: .8rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .sidebar li{
+        padding-left: .5rem;
+    }
+    .sidebar{
+        text-align: center;
+    }
+
+    .container-policy a{
+        font-size: .6rem;
+    }
+
+    main .btn-wrapper{
+        padding-bottom: 30px;
+    }
+
+    footer a{
+        font-size: .8rem;
+    }
+    .footer .contents-policy{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    /* .navbar-side {
+        height: 100%;
+    } */
+    .navbar a{
+        font-size: .8rem;
+        padding: 0 4px;
+    }
+
+    .navbar #sign-in a {
+        padding: 7px 12px;
+    }
+    /* main .playlists {
+        height: 2000px;
+    } */
+    
+    main .card-wrapper{
+        /* height: 650px; */
+        flex-flow: column;
+        height: auto;
+    }
+
+    main .card{
+        width: 50%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    main .btn-wrapper{
+        width: 35%;
+    }
+
+    main .pause, main .play{
+        padding: 17px;
+    }
+
+    footer .fot-contents{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+
+    footer .fot-links-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .fot-icons{
+        margin-top: 30px;
+    }
+
+    footer .fot-icons i {
+        margin-left: .8rem;
+        font-size: .9rem;
+        padding: 8px;
+    }
+
+}

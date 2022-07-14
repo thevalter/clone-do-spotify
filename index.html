@@ -1,86 +1,255 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spotify</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/d9feee0e86.js" defer crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Spotify</title>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-        <img class="imagem" src="spotifylogo.png">
-        </div>
-        <div class="botao">
-            <a href="#">Premium</a>
-            <a href="#">Suporte</a>
-            <a href="#">Baixar</a>
-            <div id="espaço"></div>
-            <a href="#">Inscrever-se</a>
-            <a href="#">Entrar</a>
 
+<body>
+
+    <nav class="navbar-side">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="container-primary">
+                <li id="home"><a href="#"><i class="fa-solid fa-house"></i> &nbsp; Inicio</a></li>
+                <li id="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i> &nbsp; Buscar</a></li>
+                <li id="lib"><a href="#"><i class="fa-solid fa-book-open"></i> &nbsp; Sua Biblioteca</a></li>
+            </div>
+            <div class="container-secundary">
+                <li id="add"><a href="#"><i class="fa-solid fa-square-plus"></i> &nbsp; Criar Playlist</a></li>
+                <li id="fav"><a href="#"><i class="fa-solid fa-shield-heart"></i> &nbsp; Musicas Curtidas</a></li>
+            </div>
+        </div>
+        <div class="container-policy">
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Privacidade</a></li>
         </div>
     </nav>
-
-    <header>
-        <h2>Escutar muda tudo</h2>
-        <p>Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</p>
-        <center>
-       <a class="botao-baixar" href="#">baixe o spotify free</a>
-       </center>
-    </header>
-
-    <footer class="rodape">
-        <div class="logo-rodape">
-            <img class="img-rodape" src="spotifylogo.png">
+    <nav class="navbar-top">
+        <div class="navbar">
+            <li><a href="#">Premium</a></li>
+            <li><a href="#">Suporte</a></li>
+            <li><a href="#">Baixar</a></li>
+            <li id="divisor"><a href="#">|</a></li>
+            <li><a href="#">Inscrever-se</a></li>
+            <li id="sign-in"><a href="#">Entrar</a></li>
         </div>
-
-        <div class="empresa">
-           <p style="color: gray; text-transform: uppercase; margin-top: 50%; text-decoration: none; padding: 12px; font-size: 12px; text-align: left;">Empresa</p>
-           <a class="empresa1" href="#">Sobre</a>
-           <a class="empresa1" href="#">Empregos</a>
-           <a class="empresa1" href="#">For the Record</a>
+    </nav>
+    <main>
+        <div class="playlists">
+            <div class="info">
+                <h2>Lançamentos da Semana</h2>
+                <p>Ver tudo</p>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseVampiro" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playVampiro" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="vampiro" src="audio/vampiro.mp3"></audio>
+                    <img src="images/vampiro.jpg" alt="">
+                    <span>Matue</span>
+                    <p>Ouça um dos maiores artistas do Trap brasleiro.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseMacaVerde" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playMacaVerde" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="macaVerde" src="audio/maçaVerde.mp3"></audio>
+                    <img src="images/maçaVerde.jpg" alt="">
+                    <span>Mc Hariel</span>
+                    <p>Hariel é um artista consagrado com uma longa carreira no funk.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseHypnotize" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playHypnotize" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="hypnotize" src="audio/hypnotize.mp3"></audio>
+                    <img src="images/hypnotize.jpg" alt="">
+                    <span>Biggie</span>
+                    <p>Christoper "The Notorius B.I.G" Wallace. Simplesmente, o melhor rapper que ja pisou nesse mundo</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseElaPartiu" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playElaPartiu" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="elaPartiu" src="audio/elaPartiu.mp3"></audio>
+                    <img src="images/timMaia.jpg" alt="">
+                    <span>Tim Maia</span>
+                    <p>Dispensa apresentaçoes. Tim Maia é o rei da soul music Brasileira.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseOnOn" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playOnOn" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="onOn" src="audio/on&on.mp3"></audio>
+                    <img src="images/erykaBaduh.jpg" alt="">
+                    <span>Erykah Badu</span>
+                    <p>Uma das maiores artistas do R&B atual. Ouça agora mesmo!</p>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseVampiro2" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playVampiro2" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="vampiro2" src="audio/vampiro.mp3"></audio>
+                    <img src="images/vampiro.jpg" alt="">
+                    <span>Trap</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseMacaVerde2" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playMacaVerde2" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="macaVerde2" src="audio/maçaVerde.mp3"></audio>
+                    <img src="images/maçaVerde.jpg" alt="">
+                    <span>Funk</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseHypnotize2" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playHypnotize2" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="hypnotize2" src="audio/hypnotize.mp3"></audio>
+                    <img src="images/hypnotize.jpg" alt="">
+                    <span>Hip-hop</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseElaPartiu2" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playElaPartiu2" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="elaPartiu2" src="audio/elaPartiu.mp3"></audio>
+                    <img src="images/timMaia.jpg" alt="">
+                    <span>Mpb</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseOnOn2" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playOnOn2" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="onOn2" src="audio/on&on.mp3"></audio>
+                    <img src="images/erykaBaduh.jpg" alt="">
+                    <span>R&B</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseVampiro3" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playVampiro3" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="vampiro3" src="audio/vampiro.mp3"></audio>
+                    <img src="images/vampiro.jpg" alt="">
+                    <span>Trap</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseMacaVerde3" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playMacaVerde3" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="macaVerde3" src="audio/maçaVerde.mp3"></audio>
+                    <img src="images/maçaVerde.jpg" alt="">
+                    <span>Funk</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseHypnotize3" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playHypnotize3" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="hypnotize3" src="audio/hypnotize.mp3"></audio>
+                    <img src="images/hypnotize.jpg" alt="">
+                    <span>Hip-hop</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseElaPartiu3" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playElaPartiu3" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="elaPartiu3" src="audio/elaPartiu.mp3"></audio>
+                    <img src="images/timMaia.jpg" alt="">
+                    <span>Mpb</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card">
+                    <div class="btn-wrapper">
+                        <button id="pauseOnOn3" class="pause"><i class="fa-solid fa-pause"></i></button>
+                        <button id="playOnOn3" class="play"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <audio id="onOn3" src="audio/on&on.mp3"></audio>
+                    <img src="images/erykaBaduh.jpg" alt="">
+                    <span>R&B</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="comunidade">
-            <p style="color: gray; text-transform: uppercase; margin-top: 45%; text-decoration: none; padding: 12px; font-size: 12px; text-align: left;">Comunidade</p>
-            <a class="comunidade1" href="#">Para Artistas</a>
-            <a class="comunidade1" href="#">Desenvolvedores</a>
-            <a class="comunidade1" href="#">Publicidade</a>
-            <a class="comunidade1" href="#">investidores</a>
-            <a class="comunidade1" href="#">Fornecedores</a>
-
+    </main>
+    <footer class="footer">
+        <div class="fot-contents">
+            <div class="fot-links-wrapper">
+                <div class="fot-links">
+                    <p>Empresa</p>
+                    <a href="#">Sobre</a>
+                    <a href="#">Empregos</a>
+                    <a href="#">For the Record</a>
+                </div>
+                <div class="fot-links">
+                    <p>Comunidade</p>
+                    <a href="#">Para Artistas</a>
+                    <a href="#">Desenvolvedores</a>
+                    <a href="#">Publicidade</a>
+                    <a href="#">Investidores</a>
+                    <a href="#">Fornecedores</a>
+                </div>
+                <div class="fot-links">
+                    <p>Links úteis</p>
+                    <a href="#">Suporte</a>
+                    <a href="#">Aplicativo móvel grátis</a>
+                </div>
+            </div>
+            <div class="fot-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
         </div>
-
-        <div class="links">
-            <p style="color: gray; text-transform: uppercase; margin-top: 35%; text-decoration: none; padding: 12px; font-size: 12px; text-align: left;">links úteis</p>
-            <a class="links1" href="#">Suporte</a>
-            <a class="links1" href="#">Player da Wen</a>
-            <a class="links1" href="#">Aplicativo movel gratis</a>
+        <div class="contents-policy-wrapper">
+            <div class="contents-policy">
+                <a href="#">Legal</a>
+                <a href="#">Centro de Privacidade</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre anúncios</a>
+            </div>
+            <div class="copyright">
+                © 2022 Spotify AB
+            </div>
         </div>
-
-        <div class="icones">
-            <img style="width: 32px; height: 32px; margin-top: 50%; margin-right: 10%;" src="logoinsta.png">
-            <img style="width: 32px; height: 32px; margin-top: 50%; margin-right: 10%;" src="twitterlogo.png">
-            <img style="width: 32px; height: 32px; margin-top: 50%;" src="facebooklogo.png">
-        </div>
-
-        <div class="creditos">
-            <a class="creditos11" href="#">Legal</a>
-            <a class="creditos11" href="#">Centro de Privacidade</a>
-            <a class="creditos11" href="#">Política de privacidade</a>
-            <a class="creditos11" href="#">Cookies</a>
-            <a class="creditos11" href="#">Sobre anúncios</a>
-
-        </div>
-
-        <div class="creditos2">
-            <a class="creditos22" href="#">☯ Brasil</a>
-            <p class="creditos22">© 2022 Spotify AB</p>
-        </div>
-
     </footer>
-    
 </body>
+
 </html>
